@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Anek Malayalam', sans-serif;
+}
+.cont-img{
+    width: 50%;
+    height: 100vh;
+    float: left;
+    background-image: url(./eberhard-grossgasteiger-9xwLf_csaQ8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cont-form, .cont-logo, form, label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    color: coral;
+    letter-spacing: 2px;
+}
+
+.cont-form{
+    height: 100vh;
+    padding-top: 3%;
+
+}
+form{
+    width: 80%;
+    margin-top: 1rem;
+}
+
+label{
+    width: 100%;
+}
+form input{
+    width: 200px;
+    height: 30px;
+
+}
+.img-usuario{
+    width: 90px;
+    height: auto;
+}
+
+form :nth-last-child(2){
+flex-direction: row;
+
+
+}
+
+#check{
+    justify-content: center;
+
+}
+#check input{
+    width: auto;
+    margin: 1%;
+}
+#submit{
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: coral;
+    
+
+}
+
+@media (max-width:850px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .cont-img{
+        height: 30vh;
+        width: 100%;
+        background-size: cover;
+    }
+}
